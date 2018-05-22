@@ -1,0 +1,123 @@
+$violet : #7386D5;
+$violet-x1 : #6d7fcc;
+$violet-x2 : #6272b7;
+$violet-x3 : #5765a3;
+$violet-x4 : #4c588e;
+
+$violet-border : #47748b;
+
+$blue : #0070d8;
+$blue-x1 : #0066c4;
+$blue-x2 : #005bb1;
+$blue-x3 : #00519d;
+
+
+$red : #e16944;
+$red-x1 : #dd572e;
+$red-x2 : #d14b21;
+$red-x3 : #bb431e;
+
+$orange : #f2b571;
+$orange-x1 : #f0a95a;
+$orange-x2 : #ee9d43;
+$orange-x3 : #ec912b;
+
+
+$white : #fff;
+$white-x1 : #fff;
+$white-x2 : #fff;
+$white-x3 : #fff;
+
+
+$green : #2dbc4c;
+$green-x1 : #28a744;
+$green-x2 : #23923c;
+$green-x3 : #1e7e33;
+
+$base: $green;
+$base-x1: $green-x1;
+$base-x2: $green-x2;
+$base-x3: $green-x3;
+
+
+a{
+	&:hover{
+		text-decoration: none !important;
+		color: inherit !important;
+	}
+}
+.hidden{
+	display:none;
+}
+
+.btn-crm{
+	border-radius:0px;
+	-webkit-box-shadow: -2px 11px 10px -7px rgba(153,153,153,1);
+	-moz-box-shadow: -2px 11px 10px -7px rgba(153,153,153,1);
+	box-shadow: -2px 11px 10px -7px rgba(153,153,153,1);
+}
+
+// hr{
+// 	border-top: 1px solid #0066c4 ;
+// }
+
+
+.btn-crm-default{
+	background-color:#fff;
+	border-color:$base-x1;
+	color:$base;
+	border-radius:0px;
+
+	&:hover{
+		background-color: $base-x3;
+		color:#fff;
+	}
+
+	&.width-100{
+		width:100px !important;
+	}
+}
+
+
+.btn-crm-primary{
+	background-color:$base;
+	border-color:$base-x1;
+	color:#fff;
+	border-radius:0px;
+
+	&:hover{
+		background-color: $base-x3;
+	}
+
+	&.width-100{
+		width:100px !important;
+	}
+}
+
+.form-control{
+	border-radius:0px !important;
+}
+
+textarea {
+    resize: none;
+}
+
+.btn-crm-cancel{
+	border-color: #0066c4;
+    color: #0066c4;
+}
+
+.input-group-text{
+	border-radius:0px;
+}
+
+.status{
+	font-weight: 700;
+	&.active{
+		color:green;
+	}
+
+	&.rejected{
+		color:red;
+	}
+}

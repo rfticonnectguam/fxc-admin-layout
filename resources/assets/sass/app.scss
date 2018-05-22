@@ -1,0 +1,362 @@
+
+// Fonts
+//@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+
+
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+//admin theme
+@import url("plugins/admintheme/admin.css");
+
+// Variables
+@import "variables";
+
+// .content-wrapper{
+// 	background-color:#F5F6FA !important;
+// }
+
+body{
+	font-size:12px !important;
+}
+// .PageLayout{
+tr,th,a,button,label,p,td,span,button,input, .btn{
+	font-size:12px !important;
+}
+// }
+
+.table{
+	td{
+		padding: 0.50rem;
+	}
+}
+
+.navbar-sidenav{
+	span{
+		font-size:14px !important;
+	}
+}
+
+
+
+.has-error{
+	
+	.form-control{
+		border-color:red;
+	}
+}
+
+.Error{
+	font-size:12px;
+	font-style:italic;
+	color:red;
+}
+.box-default{
+	 padding:20px 20px 20px 20px;
+	-webkit-box-shadow: 0px 4px 26px -8px rgba(153,153,153,1);
+	-moz-box-shadow: 0px 4px 26px -8px rgba(153,153,153,1);
+	box-shadow: 0px 4px 26px -8px rgba(153,153,153,1);
+	border:1px solid #e5e5e5;
+
+	.box-header{
+		color:$base;
+	}
+}
+
+.btn-crm-outline-primary{
+	border:1px solid $base;
+	color:$base;
+	background-color:#fff;
+
+	&:hover{
+		background-color:$base;
+		color:#fff;
+	}
+}
+
+.bg-violet-x1{
+	background-color:$base-x1;
+}
+
+.navbar{
+
+	.navbar-collapse{
+		i{
+			color:#fff;
+		}
+		
+	}
+
+	.navbar-brand{
+		padding-top:0px;
+		text-align:center;
+		img{
+			height:24px;
+
+		}
+		
+	}
+
+	@media (min-width: 992px){
+		
+		#mainNav .navbar-brand {
+		    width: 225px;
+		}
+	}
+	.navbar-sidenav{
+		background-color: $base !important;
+
+		@media (max-width: 992px){
+			background-color: $base-x1 !important;
+		}
+
+		.Active{
+			background-color:$base-x1;
+		}
+
+		.nav-link{
+			color:#fff !important;
+		}
+
+		.nav-link-collapse{
+
+			@media (max-width: 992px){
+				background-color: $base-x1 !important;
+			}
+
+			&:after{
+				color:#fff !important;
+			}
+		}
+
+		.sidenav-second-level{
+			background-color: $base-x1 !important;
+			
+			a{
+				color:#fff !important;
+			}
+		}
+
+		li{
+			&:hover{
+				background-color:$base-x1 !important;
+				 transition: all 0.3s;
+			}
+			
+		}
+
+	}
+}
+
+
+.dropdown-menu{
+	left:-100% !important;
+}
+
+
+.content-wrapper{
+
+	.content-header{
+		
+		h4{
+			color:$base;
+		}
+	}
+
+	// table{
+	// 	thead{
+	// 		background-color:$base;
+	// 		color:#fff;
+	// 	}
+	// }
+}
+
+.pagination{
+	 .page-link{
+	 	color:#6c757d !important;
+	 }
+
+	// .page-item{
+		
+	// 	&.active{
+	// 		background-color:$base !important;
+	// 		color:#fff;
+			
+	// 		.page-link{
+	// 			color:$base !important;
+	// 			background-color:$base;
+	// 			color:#fff !important;
+	// 			border-color:$base !important;
+	// 		}
+	// 	}
+
+	// 	.page-link{
+	// 		color:$base !important;
+
+	// 		&.active{
+				
+	// 			color:#fff;
+
+	// 		}
+	// 	}
+
+	// }
+}
+
+.sideBox{
+	z-index:1001;
+	height:100%;
+	position:absolute;
+	right:0;
+	top:0;
+	background-color:#fff;
+	-webkit-box-shadow: -2px 4px 33px -4px rgba(153,153,153,1);
+	-moz-box-shadow: -2px 4px 33px -4px rgba(153,153,153,1);
+	box-shadow: -2px 4px 33px -4px rgba(153,153,153,1);
+	overflow: scroll;
+	padding-bottom:200px;
+}
+	
+
+.hiddenBox{
+	.hiddenBoxHeader{
+		h1{
+			color:$base;
+		}
+		
+
+	}
+
+	.hiddenBoxSubHeader{
+		h5{
+			color:$base;	
+		}
+	}
+
+	.CopyBillingDiv{
+
+		p{
+			 font-weight: 600;
+		    font-size: 14px;
+		    color: #0070d8;
+		}
+		   
+	}
+
+}
+
+
+// SASS FOR APP MODULE
+.AppMdule{
+	
+	.nav-link{
+		&:after{
+			color: #fff !important;
+		}
+	}
+}
+
+.LogsDiv,.reloadPinsDiv{
+	.breadcrumb{
+		a{
+			color:$base;
+		}
+
+		.breadcrumb-item{
+			&:before{
+				color:$base;
+			}
+		}
+	}
+}
+
+.modal-header{
+	background-color:$base;
+	color:#fff;
+}
+
+.loginForm{
+	.loginBox{
+		border-top:5px solid $base;
+		border-bottom:5px solid $base;
+		margin-top:100px;
+		padding-bottom:50px;
+	}
+
+	#loginform-logo{
+		width: 80%;
+	    padding-bottom: 50px;
+	    padding-top: 20px;
+	}
+
+	.LogoDiv{
+		text-align:center;
+	}
+}
+
+
+.ratesDiv{
+	.table{
+		.bg-primary{
+			color:#fff;
+			background-color:$base-x1 !important;
+		}
+	}
+}
+
+.alert-btn{
+	background-color:#bdbdbd;
+	color:#fff;
+}
+
+
+.dashboardBtn{
+	.alert-btn{
+		color:#333;
+
+		.badge{
+			font-size:15px;
+		}
+	}
+
+	.alert-heading{
+		color:#fff;
+		font-size:15px !important;
+	}
+
+	.btn-primary{
+		color:#fff;
+		background-color:$base;
+		border-color:$base-x1;
+	}
+}
+
+.searchForm{
+	
+	.input-group{
+		width:400px !important;
+		margin-left:235px;
+	}
+	.fa-search{
+		color:$base !important;
+	}
+	.input-group{
+		height:30px;
+	}
+
+	.btn-default{
+		background-color:$base-x3;
+		color:#fff;
+	}
+
+	.dropdown{
+		
+		.btn{
+			background-color:$base-x3;
+			color:#fff;
+		}
+	}
+}
+
+

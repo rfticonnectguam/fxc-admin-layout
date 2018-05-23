@@ -23,6 +23,7 @@ body{
 // .PageLayout{
 tr,th,a,button,label,p,td,span,button,input, .btn{
 	font-size:12px !important;
+	color:#6c757d;
 }
 // }
 
@@ -35,6 +36,7 @@ tr,th,a,button,label,p,td,span,button,input, .btn{
 .navbar-sidenav{
 	span{
 		font-size:14px !important;
+		color:#fff;
 	}
 }
 
@@ -358,5 +360,88 @@ tr,th,a,button,label,p,td,span,button,input, .btn{
 		}
 	}
 }
+
+.btn-primary{
+	color:#fff;
+}
+
+.fxc-primary{
+	background-color:$base;
+	color:#fff;
+	th{
+		color:#fff;
+	}
+}	
+
+
+.showRemittersModule{
+
+	.RemittersListTbl{
+		.viewBtn{
+			background-color:#bebebe;
+		}
+		.useBtn{
+			color:#fff;
+		}
+
+		.btn{
+			width:65px;
+		}
+	}		
+}
+
+.showRemittersInfoModule{
+	.editRemitter-btn{
+		    padding: 3px 17px;
+    		border-radius: 0px;
+	}
+	.actionBtn{
+		width:150px;
+	}
+
+	#UseExistingBeneModal{
+		text-align:center;
+
+		.btn{
+			width:90px;
+		}
+
+	}
+}
+
+.btn-default{
+	background-color:#c3c3c3;
+	color:#333;
+}
+
+.btn-warning{
+	color:#565656;
+}
+
+.addNewBeneficiaryModule{
+	.proceedToPayment{
+		text-align:center;
+
+		.btn{
+			width:250px;
+		}
+	}
+}
+
+.showRemittersBeneModule{
+	.actionHead{
+		text-align:center;
+	}
+
+	.TblActionBtn{
+		text-align:center;
+	}
+
+	.actionBtn{
+		width:150px;
+	}
+}
+
+
 
 

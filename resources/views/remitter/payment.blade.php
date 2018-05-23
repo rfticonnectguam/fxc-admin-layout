@@ -1,21 +1,22 @@
 @extends('layout.app')
 
-@section('title', 'Dashboard')
+@section('title', 'Remitter')
 
 @section('content')
+  <div class="remitterPayment">
       <div class="row">
           <div class="col-md-12">
-              <div class="content-header">
-                  <div class="col-sm-6">
-                     <h4><i class="fas fa-tachometer-alt"></i> Dashboard</h4>
-                  </div>
+            <div class="content-header">
+                <div class="row">
+                    <div class="col-md-6">
+                       <h4> <i class="fa fa-user" aria-hidden="true"></i> Remitter</h4>
+                    </div>
+                </div>
               </div>
           </div>
       </div>
 
       <hr/>
-      <br/>
-      
       <div class="row">
           <div class="col-md-8">
               <!-- <div class="row">
@@ -45,64 +46,60 @@
 
               <div class="row">
                   <div class="col-md-12">
-                      <div class="box-default">
-                       
-                              <h6 class="box-header">Remittance request</h6>
-                              <br/>
-                              <table class="table table-bordered">
-                                <thead>
-                                  <tr>
-                                    <th scope="col">ID</th>
-                                    <th scope="col">First Name</th>
-                                    <th scope="col">Middle Name</th>
-                                    <th scope="col">Last Name</th>
-                                    <th scope="col">Date Created</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr>
-                                    <td scope="row">1</td>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
-                                    <td>Ipsum</td>
-                                    <td>12/04/18</td>
-                                  </tr>
-                                  <tr>
-                                    <td scope="row">2</td>
-                                    <td>Jacob</td>
-                                    <td>Thornton</td>
-                                    <td>Ipsum</td>
-                                    <td>04/01/18</td>
-                                  </tr>
-                                  <tr>
-                                    <td scope="row">3</td>
-                                    <td>Larry</td>
-                                    <td>the Bird</td>
-                                    <td>@twitter</td>
-                                    <td>04/01/18</td>
-                                  </tr>
-                                </tbody>
-                              </table>
-
-                            <nav aria-label="Page navigation example">
-                                <ul class="pagination justify-content-end">
-                                  <li class="page-item disabled">
-                                    <a class="page-link" href="#" tabindex="-1">Prev</a>
-                                  </li>
-                                  <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                  <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                  <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                  <li class="page-item">
-                                    <a class="page-link" href="#">Next</a>
-                                  </li>
-                                </ul>
-                              </nav>  
-                                  
-                      </div>
+                      <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item" aria-current="page">
+                              <a href="{{URL::to('/remitter')}}">Remitter
+                              </a></li>
+                          <li class="breadcrumb-item" aria-current="page">
+                              <a href="{{URL::to('/show-remitter-info')}}"> Remitter Info</a>
+                           </li>
+                           <li class="breadcrumb-item" aria-current="page">
+                              <a href="{{URL::to('/show-remitter-beneficiaries')}}"> Beneficiaries</a>
+                           </li>
+                           <li class="breadcrumb-item" aria-current="page">
+                              <a href="{{URL::to('/add-new-beneficiary')}}"> Add Beneficiary</a>
+                           </li>
+                           <li class="breadcrumb-item active" aria-current="page">Payment</li>
+                        </ol>
+                      </nav>
                   </div>
               </div>
-             
-             <br/>
+
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="box-default">
+                        <div class="row">
+                            <div class="col-md-6">
+                              
+                            </div>
+                         </div>
+
+                         <br/>
+                          
+                        <form>
+                           <div class="row">
+
+                                <div class="col-md-12">
+                                   <h6 class="box-header">
+                                    <i class="far fa-money-bill-alt"></i> Payment</h6>
+                                   <br/>
+                                </div>
+
+                           </div>
+                        </form>
+
+
+                         {{-- <div class="col-md-6">
+                            <button class="btn btn-crm btn-primary">
+                                <i class="fas fa-plus-circle"></i> Add New Remitter
+                            </button>
+                          </div> --}}
+                      </div> <!--box-default-->
+                  </div> <!--col-md-12-->
+              </div> <!--row -->
+              
+              <br/>
 
           </div>{{--  col-md-8 --}}
 
@@ -161,6 +158,10 @@
               </div>
           </div>
       </div>
+
+
+
+  </div> <!--showRemittersModule-->
 @endsection
 
 @section('script')

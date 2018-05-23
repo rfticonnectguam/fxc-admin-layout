@@ -205,7 +205,7 @@ body.fixed-nav {
 
 @media (min-width: 992px) {
   #mainNav.fixed-top .navbar-sidenav {
-    height: calc(100vh - 112px);
+    height: calc(100vh);
   }
   #mainNav.fixed-top .sidenav-toggler {
     position: absolute;
@@ -10988,6 +10988,7 @@ button,
 input,
 .btn {
   font-size: 12px !important;
+  color: #6c757d;
 }
 
 .table td {
@@ -10996,6 +10997,7 @@ input,
 
 .navbar-sidenav span {
   font-size: 14px !important;
+  color: #fff;
 }
 
 .has-error .form-control {
@@ -11220,5 +11222,76 @@ input,
 .searchForm .dropdown .btn {
   background-color: #1e7e33;
   color: #fff;
+}
+
+.btn-primary {
+  color: #fff;
+}
+
+.fxc-primary {
+  background-color: #2dbc4c;
+  color: #fff;
+}
+
+.fxc-primary th {
+  color: #fff;
+}
+
+.showRemittersModule .RemittersListTbl .viewBtn {
+  background-color: #bebebe;
+}
+
+.showRemittersModule .RemittersListTbl .useBtn {
+  color: #fff;
+}
+
+.showRemittersModule .RemittersListTbl .btn {
+  width: 65px;
+}
+
+.showRemittersInfoModule .editRemitter-btn {
+  padding: 3px 17px;
+  border-radius: 0px;
+}
+
+.showRemittersInfoModule .actionBtn {
+  width: 150px;
+}
+
+.showRemittersInfoModule #UseExistingBeneModal {
+  text-align: center;
+}
+
+.showRemittersInfoModule #UseExistingBeneModal .btn {
+  width: 90px;
+}
+
+.btn-default {
+  background-color: #c3c3c3;
+  color: #333;
+}
+
+.btn-warning {
+  color: #565656;
+}
+
+.addNewBeneficiaryModule .proceedToPayment {
+  text-align: center;
+}
+
+.addNewBeneficiaryModule .proceedToPayment .btn {
+  width: 250px;
+}
+
+.showRemittersBeneModule .actionHead {
+  text-align: center;
+}
+
+.showRemittersBeneModule .TblActionBtn {
+  text-align: center;
+}
+
+.showRemittersBeneModule .actionBtn {
+  width: 150px;
 }
 

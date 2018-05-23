@@ -76,7 +76,6 @@
                                 <i class="far fa-money-bill-alt"></i> REMIT
                             </button>
 
-                           
                           </div>
                          </div>
 

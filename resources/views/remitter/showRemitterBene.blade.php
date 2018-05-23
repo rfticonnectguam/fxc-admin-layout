@@ -64,7 +64,7 @@
                       <div class="box-default">
                         <div class="row">
                           <div class="col-md-6">
-                             <h6 class="box-header">Beneficiaries</h6>
+                             <h6 class="box-header"><i class="fas fa-users"></i> Beneficiaries</h6>
                           </div>
                           <div class="col-md-6">
                             

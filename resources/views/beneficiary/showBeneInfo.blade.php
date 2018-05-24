@@ -51,8 +51,11 @@
                           <li class="breadcrumb-item" aria-current="page">
                               <a href="{{URL::to('/remitter')}}">Remitter
                               </a></li>
-                          <li class="breadcrumb-item active" aria-current="page">
+                          <li class="breadcrumb-item" aria-current="page">
                               <a href="{{URL::to('/show-remitter-info')}}"> Remitter Info</a></li>
+                              <li class="breadcrumb-item" aria-current="page">
+                              <a href="{{URL::to('/show-remitter-beneficiaries')}}"> Beneficiaries</a></li>
+                           <li class="breadcrumb-item active" aria-current="page">Beneficiary Info</li>
                         </ol>
                       </nav>
                   </div>
@@ -65,16 +68,13 @@
                           
                           <div class="col-md-12">
                             
-                             <a href="{{URL::to('/update-remitter')}}"  class="btn btn-crm actionBtn btn-primary float-right mr-1">
+                             <a href="{{URL::to('/update-beneficiary')}}"  class="btn btn-crm actionBtn btn-primary float-right mr-1">
                                <i class="fas fa-edit"></i> UPDATE
                             </a>
-                            <a href="{{URL::to('/show-remitter-beneficiaries')}}" class="btn btn-crm actionBtn btn-primary float-right mr-1 ">
-                                 <i class="fas fa-users"></i> BENEFICIARIES
-                            </a>
 
-                            <button  data-toggle="modal" data-target="#UseExistingBeneModal" class="btn btn-crm actionBtn btn-primary float-right mr-1">
+                            <a href="{{URL::to('/remitter-payment')}}" class="btn btn-crm actionBtn btn-primary float-right mr-1">
                                 <i class="far fa-money-bill-alt"></i> REMIT
-                            </button>
+                            </a>
 
                           </div>
                          </div>
@@ -157,35 +157,11 @@
                                      <td scope="row">Country Code</td>
                                       <td scope="row">USA</td>
                                     </tr>
-
-
-                                    <tr>
-                                     <td scope="col" colspan="2" class="fxc-primary">
-                                        Other Information
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                     <td scope="row">Occupation</td>
-                                      <td scope="row">Software Engineer</td>
-                                    </tr>
-                                    <tr>
-                                     <td scope="row">ID 1</td>
-                                      <td scope="row"></td>
-                                    </tr>
-                                    <tr>
-                                     <td scope="row">ID 2</td>
-                                      <td scope="row"></td>
-                                    </tr>
-                                    <tr>
-                                     <td scope="row">Mabuhay Miles</td>
-                                      <td scope="row"></td>
-                                    </tr>
                                    
                                   </tbody>
                                 </table>
                             </div>
                          </div>
-
 
 
                          {{-- <div class="col-md-6">
@@ -203,7 +179,7 @@
 
           
           @include('layout.rates')
-
+          
       </div>
 
        @include('remitter.modals.remitterInfoModal');

@@ -11000,6 +11000,18 @@ input,
   color: #fff;
 }
 
+.breadcrumb {
+  border-radius: 0px;
+}
+
+.breadcrumb .breadcrumb-item a {
+  color: #2dbc4c;
+}
+
+.breadcrumb .breadcrumb-item.active a {
+  color: #6c757d;
+}
+
 .has-error .form-control {
   border-color: red;
 }
@@ -11283,15 +11295,31 @@ input,
   width: 250px;
 }
 
-.showRemittersBeneModule .actionHead {
+.updateRemitterModule .updateInfoBtnDiv {
   text-align: center;
 }
 
-.showRemittersBeneModule .TblActionBtn {
+.updateRemitterModule .updateInfoBtnDiv .btn {
+  width: 250px;
+}
+
+.addRemitterModule .proceedToPayment {
   text-align: center;
 }
 
-.showRemittersBeneModule .actionBtn {
+.addRemitterModule .proceedToPayment .btn {
+  width: 250px;
+}
+
+.actionHead {
+  text-align: center;
+}
+
+.TblActionBtn {
+  text-align: center;
+}
+
+.actionBtn {
   width: 150px;
 }
 

@@ -60,9 +60,9 @@
                       <div class="box-default">
                         <div class="row">
                           <div class="col-md-6">
-                            <button class="btn btn-crm btn-primary">
+                            <a href="{{'/add-remitter'}}" class="btn btn-crm btn-primary">
                                 <i class="fas fa-plus-circle"></i> Add New Remitter
-                            </button>
+                            </a>
                           </div>
                           <div class="col-md-6">
                             <div class="input-group">
@@ -96,7 +96,7 @@
                                     <th scope="col">Last Name</th>
                                     <th scope="col">First Name</th>
                                     <th scope="col">Middle Name</th>
-                                    <th scope="col">Action</th>
+                                    <th scope="col" class="actionHead">Action</th>
                                   </tr>
                                 </thead>
                                 <tbody>
@@ -105,12 +105,9 @@
                                     <td>Mark</td>
                                     <td>Otto</td>
                                     <td>Ipsum</td>
-                                     <td>
-                                        <button class="btn btn-sm btn-crm viewBtn">
-                                          <i class="far fa-eye"></i> View
-                                        </button>
+                                     <td class="TblActionBtn">
                                         <a href="{{URL::to('/show-remitter-info')}}" class="btn btn-sm btn-crm btn-primary useBtn">
-                                          <i class="far fa-hand-pointer"></i> Use
+                                          <i class="far fa-eye"></i> View
                                         </a>
                                      </td>
                                   </tr> 
@@ -138,63 +135,14 @@
               <br/>
 
           </div>{{--  col-md-8 --}}
-
           
-           <div class="col-md-4 ratesDiv">
-              <div class="box-default">
-                  <table class="table table-bordered">
-                    <thead>
-                       <col width="50%">
-                       <col width="50%">
-                      <tr>
-                        <td scope="col" colspan="2" class="bg-primary">
-                        <i class="fas fa-money-bill-alt"></i> FEES</td>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td scope="row">Service Fee(US)</td>
-                        <td scope="row">$2.00</td>
-                      </tr>
-                      <tr>
-                       <td scope="row">Service Fee(SGD)</td>
-                        <td scope="row">$2.62</td>
-                      </tr>
-                      <tr>
-                        <td scope="row">Service Fee(HKD)</td>
-                        <td scope="row">$15.17</td>
-                      </tr>
-                    </tbody>
-                  </table>
+           @include('layout.rates')
 
-                  <table class="table table-bordered">
-                    <thead >
-                       <col width="50%">
-                       <col width="50%">
-                      <tr>
-                        <td scope="col" colspan="2" class="bg-primary">
-                        <i class="fas fa-chart-line"></i> RATES</td>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td scope="row">USD</td>
-                        <td scope="row">$52.13</td>
-                      </tr>
-                      <tr>
-                        <td scope="row">SGD</td>
-                        <td scope="row">$39.59</td>
-                      </tr>
-                      <tr>
-                        <td scope="row">HKD</td>
-                        <td scope="row">$6.64</td>
-                      </tr>
-                    </tbody>
-                  </table>
-              </div>
-          </div>
       </div>
   </div> <!--showRemittersModule-->
+
+    <!-- modals -->
+
 @endsection
 
 @section('script')

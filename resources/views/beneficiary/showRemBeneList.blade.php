@@ -72,9 +72,9 @@
                                  <i class="fas fa-users"></i> BENEFICIARIES
                             </a>-->
 
-                            <button class="btn btn-crm actionBtn btn-primary float-right mr-1">
+                            <a href="{{URL::to('/add-new-beneficiary')}}" class="btn btn-crm actionBtn btn-primary float-right mr-1">
                                 <i class="fas fa-plus-circle"></i> ADD
-                            </button>
+                            </a>
                           </div>
                          </div>
 
@@ -99,14 +99,8 @@
                                     <td scope="row">1XJI21415</td>
                                     <td>Lorem, Ipsum dolor</td>
                                      <td class="TblActionBtn">
-                                        <button class="btn btn-sm btn-crm viewBtn">
+                                        <a href="{{URL::to('/show-beneficiary-info')}}" class="btn btn-sm btn-crm btn-primary useBtn">
                                           <i class="far fa-eye"></i> View
-                                        </button>
-                                        <button class="btn btn-sm btn-crm btn-warning viewBtn">
-                                          <i class="far fa-eye"></i> Edit
-                                        </button>
-                                        <a href="{{URL::to('/remitter-payment')}}" class="btn btn-sm btn-crm btn-primary useBtn">
-                                          <i class="far fa-money-bill-alt"></i> Remit
                                         </a>
                                      </td>
                                   </tr> 
@@ -144,61 +138,10 @@
 
           </div>{{--  col-md-8 --}}
 
-          
-           <div class="col-md-4 ratesDiv">
-              <div class="box-default">
-                  <table class="table table-bordered">
-                    <thead>
-                       <col width="50%">
-                       <col width="50%">
-                      <tr>
-                        <td scope="col" colspan="2" class="bg-primary">
-                        <i class="fas fa-money-bill-alt"></i> FEES</td>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td scope="row">Service Fee(US)</td>
-                        <td scope="row">$2.00</td>
-                      </tr>
-                      <tr>
-                       <td scope="row">Service Fee(SGD)</td>
-                        <td scope="row">$2.62</td>
-                      </tr>
-                      <tr>
-                        <td scope="row">Service Fee(HKD)</td>
-                        <td scope="row">$15.17</td>
-                      </tr>
-                    </tbody>
-                  </table>
-
-                  <table class="table table-bordered">
-                    <thead >
-                       <col width="50%">
-                       <col width="50%">
-                      <tr>
-                        <td scope="col" colspan="2" class="bg-primary">
-                        <i class="fas fa-chart-line"></i> RATES</td>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td scope="row">USD</td>
-                        <td scope="row">$52.13</td>
-                      </tr>
-                      <tr>
-                        <td scope="row">SGD</td>
-                        <td scope="row">$39.59</td>
-                      </tr>
-                      <tr>
-                        <td scope="row">HKD</td>
-                        <td scope="row">$6.64</td>
-                      </tr>
-                    </tbody>
-                  </table>
-              </div>
-          </div>
-      </div>
+           <!-- rates -->
+          @include('layout.rates');
+       
+      </div><!-- row -->
 
 
 

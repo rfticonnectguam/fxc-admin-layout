@@ -40,6 +40,21 @@ tr,th,a,button,label,p,td,span,button,input, .btn{
 	}
 }
 
+.breadcrumb{
+	border-radius:0px;
+
+	.breadcrumb-item{
+		a{
+			color:$base;
+		}
+
+		&.active{
+			a{
+				color:#6c757d;
+			}
+		}
+	}
+}
 
 
 .has-error{
@@ -428,19 +443,38 @@ tr,th,a,button,label,p,td,span,button,input, .btn{
 	}
 }
 
-.showRemittersBeneModule{
-	.actionHead{
+.updateRemitterModule{
+	.updateInfoBtnDiv{
 		text-align:center;
-	}
 
-	.TblActionBtn{
-		text-align:center;
-	}
-
-	.actionBtn{
-		width:150px;
+		.btn{
+			width:250px;
+		}
 	}
 }
+.addRemitterModule{
+	.proceedToPayment{
+		text-align:center;
+
+		.btn{
+			width:250px;
+		}
+	}
+}
+
+
+.actionHead{
+	text-align:center;
+}
+
+.TblActionBtn{
+	text-align:center;
+}
+
+.actionBtn{
+	width:150px;
+}
+
 
 
 

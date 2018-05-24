@@ -23,17 +23,37 @@ Route::get('/show-remitter-info', function () {
     return view('remitter.showRemitterInfo');
 });
 
-Route::get('/show-remitter-beneficiaries', function () {
-    return view('remitter.showRemitterBene');
+Route::get('/add-remitter', function () {
+    return view('remitter.addRemitter');
 });
 
-Route::get('/add-new-beneficiary', function () {
-    return view('remitter.addNewBeneficiary');
+Route::get('/update-remitter', function () {
+    return view('remitter.updateRemitter');
 });
 
 Route::get('/remitter-payment', function () {
     return view('remitter.payment');
 });
+
+Route::get('/update-beneficiary', function () {
+    return view('beneficiary.updateBeneficiary');
+});
+
+Route::get('/show-remitter-beneficiaries', function () {
+    return view('beneficiary.showRemBeneList');
+});
+
+Route::get('/add-new-beneficiary', function () {
+    return view('beneficiary.addRemBene');
+});
+
+
+Route::get('/show-beneficiary-info', function () {
+    return view('beneficiary.showBeneInfo');
+});
+
+
+
 
 
 

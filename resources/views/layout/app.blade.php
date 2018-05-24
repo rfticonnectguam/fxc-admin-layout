@@ -44,13 +44,13 @@
             <span class="nav-link-text">Remitter</span>
           </a>
         </li>
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
+        <!--<li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
           <a class="nav-link" href="leads.html">
            <i class="fa fa-user" aria-hidden="true"></i>
             <span class="nav-link-text">Beneficiary</span>
           </a>
         </li>
-        <!-- <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
+         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
           <a class="nav-link" href="opportunities.html">
             <i class="fa fa-address-book" aria-hidden="true"></i>
             <span class="nav-link-text">Opportunities</span>

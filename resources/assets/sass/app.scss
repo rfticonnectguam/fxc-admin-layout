@@ -33,11 +33,53 @@ tr,th,a,button,label,p,td,span,button,input, .btn{
 	}
 }
 
+.btn-default{
+	background-color:#c3c3c3;
+	color:#333;
+}
+
+.btn-warning{
+	color:#565656;
+}
+
 .navbar-sidenav{
 	span{
 		font-size:14px !important;
 		color:#fff;
 	}
+}
+
+.actionHead{
+	text-align:center;
+}
+
+.TblActionBtn{
+	text-align:center;
+}
+
+.actionBtn{
+	width:150px;
+}
+
+.btn-primary{
+	color:#fff;
+}
+
+.fxc-primary{
+	background-color:$base;
+	color:#fff;
+	th{
+		color:#fff;
+	}
+
+	td{
+		color:#fff;
+	}
+}
+
+
+.infoTitle{
+	color:$base;
 }
 
 .breadcrumb{
@@ -193,32 +235,6 @@ tr,th,a,button,label,p,td,span,button,input, .btn{
 	 .page-link{
 	 	color:#6c757d !important;
 	 }
-
-	// .page-item{
-		
-	// 	&.active{
-	// 		background-color:$base !important;
-	// 		color:#fff;
-			
-	// 		.page-link{
-	// 			color:$base !important;
-	// 			background-color:$base;
-	// 			color:#fff !important;
-	// 			border-color:$base !important;
-	// 		}
-	// 	}
-
-	// 	.page-link{
-	// 		color:$base !important;
-
-	// 		&.active{
-				
-	// 			color:#fff;
-
-	// 		}
-	// 	}
-
-	// }
 }
 
 .sideBox{
@@ -376,17 +392,7 @@ tr,th,a,button,label,p,td,span,button,input, .btn{
 	}
 }
 
-.btn-primary{
-	color:#fff;
-}
-
-.fxc-primary{
-	background-color:$base;
-	color:#fff;
-	th{
-		color:#fff;
-	}
-}	
+	
 
 
 .showRemittersModule{
@@ -424,14 +430,6 @@ tr,th,a,button,label,p,td,span,button,input, .btn{
 	}
 }
 
-.btn-default{
-	background-color:#c3c3c3;
-	color:#333;
-}
-
-.btn-warning{
-	color:#565656;
-}
 
 .addNewBeneficiaryModule{
 	.proceedToPayment{
@@ -460,19 +458,6 @@ tr,th,a,button,label,p,td,span,button,input, .btn{
 			width:250px;
 		}
 	}
-}
-
-
-.actionHead{
-	text-align:center;
-}
-
-.TblActionBtn{
-	text-align:center;
-}
-
-.actionBtn{
-	width:150px;
 }
 
 

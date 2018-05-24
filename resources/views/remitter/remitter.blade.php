@@ -106,8 +106,10 @@
                                     <td>Otto</td>
                                     <td>Ipsum</td>
                                      <td class="TblActionBtn">
+                                      <button data-toggle="modal" data-target="#showRemInfoModal" class="btn btn-sm btn-crm btn-default">
+                                          <i class="far fa-eye"></i> View</button>
                                         <a href="{{URL::to('/show-remitter-info')}}" class="btn btn-sm btn-crm btn-primary useBtn">
-                                          <i class="far fa-eye"></i> View
+                                          <i class="far fa-eye"></i> Use
                                         </a>
                                      </td>
                                   </tr> 
@@ -142,6 +144,8 @@
   </div> <!--showRemittersModule-->
 
     <!-- modals -->
+
+    @include('remitter.modals.showRemInfoModal')
 
 @endsection
 

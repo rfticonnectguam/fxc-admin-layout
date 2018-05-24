@@ -10995,9 +10995,51 @@ input,
   padding: 0.50rem;
 }
 
+.btn-default {
+  background-color: #c3c3c3;
+  color: #333;
+}
+
+.btn-warning {
+  color: #565656;
+}
+
 .navbar-sidenav span {
   font-size: 14px !important;
   color: #fff;
+}
+
+.actionHead {
+  text-align: center;
+}
+
+.TblActionBtn {
+  text-align: center;
+}
+
+.actionBtn {
+  width: 150px;
+}
+
+.btn-primary {
+  color: #fff;
+}
+
+.fxc-primary {
+  background-color: #2dbc4c;
+  color: #fff;
+}
+
+.fxc-primary th {
+  color: #fff;
+}
+
+.fxc-primary td {
+  color: #fff;
+}
+
+.infoTitle {
+  color: #2dbc4c;
 }
 
 .breadcrumb {
@@ -11236,19 +11278,6 @@ input,
   color: #fff;
 }
 
-.btn-primary {
-  color: #fff;
-}
-
-.fxc-primary {
-  background-color: #2dbc4c;
-  color: #fff;
-}
-
-.fxc-primary th {
-  color: #fff;
-}
-
 .showRemittersModule .RemittersListTbl .viewBtn {
   background-color: #bebebe;
 }
@@ -11278,15 +11307,6 @@ input,
   width: 90px;
 }
 
-.btn-default {
-  background-color: #c3c3c3;
-  color: #333;
-}
-
-.btn-warning {
-  color: #565656;
-}
-
 .addNewBeneficiaryModule .proceedToPayment {
   text-align: center;
 }
@@ -11309,17 +11329,5 @@ input,
 
 .addRemitterModule .proceedToPayment .btn {
   width: 250px;
-}
-
-.actionHead {
-  text-align: center;
-}
-
-.TblActionBtn {
-  text-align: center;
-}
-
-.actionBtn {
-  width: 150px;
 }
 

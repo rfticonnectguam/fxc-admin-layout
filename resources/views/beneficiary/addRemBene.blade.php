@@ -190,7 +190,7 @@
 
                                   <div class="col-md-12 proceedToPayment">
                                     <br/>
-                                      <a href="{{'/remitter-payment'}}" class="btn btn-crm btn-primary">PROCEED TO PAYMENT</a>
+                                      <button class="btn btn-crm btn-primary">SUBMIT</button>
                                        <br/>
                                         <br/>
                                   </div>

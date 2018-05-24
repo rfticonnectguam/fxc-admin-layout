@@ -179,7 +179,7 @@
 
           
           @include('layout.rates')
-          
+
       </div>
 
        @include('remitter.modals.remitterInfoModal');

@@ -32,7 +32,7 @@ Route::get('/update-remitter', function () {
 });
 
 Route::get('/remitter-payment', function () {
-    return view('remitter.payment');
+    return view('payment.payment');
 });
 
 Route::get('/update-beneficiary', function () {
